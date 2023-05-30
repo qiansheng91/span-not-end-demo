@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    gateway:
+      enabled: true
+      routes:
+        - id: route1
+          uri: http://127.0.0.1:18080/hello
+          predicates:
+            - Path=/hello/**
+          metadata:
+            response-timeout: 200
+            connect-timeout: 200
