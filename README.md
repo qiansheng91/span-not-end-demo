@@ -17,7 +17,7 @@
 ```bash
 export OTEL_METRICS_EXPORTER=logging-otlp
 export OTEL_TRACES_EXPORTER=logging-otlp
-java -javaagent:/path/to/opentelemetry-javaagent-all.jar -jar application/target/application-1.0-SNAPSHOT.jar
+java -javaagent:/path/to/opentelemetry-javaagent.jar -jar application/target/application-1.0-SNAPSHOT.jar
 ```
 
 3. Run springboot-gateway project
@@ -25,7 +25,7 @@ java -javaagent:/path/to/opentelemetry-javaagent-all.jar -jar application/target
 ```bash
 export OTEL_METRICS_EXPORTER=logging-otlp
 export OTEL_TRACES_EXPORTER=logging-otlp
-java -javaagent:/path/to/opentelemetry-javaagent-all.jar -jar springboot-gateway/target/springboot-gateway-1.0-SNAPSHOT.jar
+java -javaagent:/path/to/opentelemetry-javaagent.jar -jar springboot-gateway/target/springboot-gateway-1.0-SNAPSHOT.jar
 ```
 
 4. Curl the api
